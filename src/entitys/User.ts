@@ -45,7 +45,7 @@ export class User {
   avatar: string;
 
   // nickname
-  @Column({ type: 'varchar', length: 255, default: '匿名' })
+  @Column({ type: 'varchar', length: 255, nullable: true })
   nickname: string;
 
   // 创建时间 - 自动设置为实体创建时的时间
